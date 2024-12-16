@@ -1,131 +1,42 @@
-/* Основной стиль страницы */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 10px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
-/* Стиль для хедера */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+.tab {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-header h1 {
-    text-align: center;
-    font-size: 2.5em;
+.tab:hover {
+  background-color: #666;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.content-container {
+  display: none;
 }
 
-nav ul li {
-    margin-right: 20px;
+.content {
+  display: none;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 5px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Секция "О сайте" */
-section {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-section p {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-/* Секция "Услуги" */
-.services-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.service-item {
-    background-color: #e4e4e4;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    text-align: center;
-}
-
-.service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.service-item p {
-    font-size: 1.1em;
-}
-
-/* Секция "Контакты" */
-#contact p {
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-
-#contact a {
-    color: #333;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Футер */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .services-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+.content.active {
+  display: block;
 }
