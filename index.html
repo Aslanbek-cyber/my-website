@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на GitHub Pages</title>
+    <title>Мой сайт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
+        <div class="container">
+            <h1>Добро пожаловать на мой сайт!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">О сайте</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">О сайте</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
+
     <section id="about">
-        <h2>О сайте</h2>
-        <p>Этот сайт размещён с помощью GitHub Pages.</p>
+        <div class="container">
+            <h2>О сайте</h2>
+            <p>Этот сайт был создан с использованием HTML, CSS и JavaScript. Здесь вы можете узнать обо мне, моих услугах и связаться со мной.</p>
+        </div>
     </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Услуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Веб-разработка</h3>
+                    <p>Создание красивых и функциональных веб-сайтов.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Дизайн</h3>
+                    <p>Проектирование логотипов, баннеров и других графических элементов.</p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO-оптимизация</h3>
+                    <p>Повышение видимости вашего сайта в поисковых системах.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
-        <h2>Контакты</h2>
-        <p>Вы можете связаться со мной по email: example@mail.com</p>
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной по электронной почте: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Мой сайт</p>
+        <div class="container">
+            <p>&copy; 2024 Мой сайт | Все права защищены</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
